@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="header">
+      <h3 class="main-header">Simple, traffic-based pricing</h1>
+      <div class="main-paras">
+        <h2 class="header-para">Sign-up for our 30-day trial.</h2>
+      <h2 class="header-para">No credit card required.</h2>
+      </div>
+    </div>
+    <div class="container">
+      <div class="pageviews">
+        <div class="page-header-div">
+          <h3 class="page-header"><span class="many-pageviews"></span> Pageviews</h3>
+          <div class="price-div">
+            <p class="price-desktop">$ 16.00</p>
+            <span class="per-month-desktop">/month</span>
+          </div>
+        </div>
+        <div class="slide-container">
+          <input type="range" min="1" max="100" value="1" class="slider" id="myRange" >
+        </div>
+        <div class="price-div">
+          <p class="price">$ 16.00</p>
+          <span class="per-month">/month</span>
+        </div>
+        <div class="billing-info">
+          <p class="monthly">Monthly Billing</p>
+          <label class="switch">
+            <input type="checkbox" value="false" class="toggle-input">
+            <span class="toggle round"></span>
+          </label>
+          <p class="yearly">Yearly Billing</p>
+          <p class="discount">-25%</p>
+          <!-- <span class="discount-desktop">discount</span> -->
+        </div>
+      </div>
+      <div class="trial-info">
+        <div class="inside-trial">
+          <div class="includes-part">
+            <div class="one-include">
+              <img src="./images/icon-check.svg" alt="">
+              <p class="include">Unlimited websites</p>
+            </div>
+            <div class="one-include">
+              <img src="./images/icon-check.svg" alt="">
+              <p class="include">100% data ownership</p>
+            </div>
+            <div class="one-include">
+              <img src="./images/icon-check.svg" alt="">
+              <p class="include">Email reports</p>
+            </div>
+          </div>
+          <div class="start-trial-btn">
+            <button class="start-trial">Start my trial</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Viktoria</a>.
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
